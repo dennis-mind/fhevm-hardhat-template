@@ -51,6 +51,11 @@ const config: HardhatUserConfig = {
       chainId: 31337,
       url: "http://localhost:8545",
     },
+    ethereum: {
+      accounts: PRIVATE_KEY!.split(","),
+      chainId: 1,
+      url: `https://mainnet.infura.io/v3/${INFURA_API_KEY}`,
+    },
     sepolia: {
       accounts: PRIVATE_KEY!.split(","),
       chainId: 11155111,
